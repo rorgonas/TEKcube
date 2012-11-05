@@ -1,0 +1,67 @@
+#container {
+	width:100%;
+	-webkit-perspective: 800;
+	-webkit-perspective-origin: 50% 300px;
+}
+
+#shape {
+	position: relative;
+	top: 200px;
+	margin: 0 auto;
+	width: 200px;
+	height:200px;	
+	-webkit-transform-style: preserve-3d;
+}
+
+#shape span {
+	font-size: 40px;
+	color: red;
+}
+
+#shape {
+	-webkit-animation: spin 8s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	from {-webkit-transform: rotateY(0deg);}
+	to  {-webkit-transform: rotateY(-360deg);}
+}
+
+.plane {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 140px;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.cube {
+	opacity: 0.5;
+}
+
+.cube > .one {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(100px);
+}
+
+.cube > .two {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(100px);
+}
+
+.cube > .three {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(100px);
+}
+
+.cube > .four {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(100px);
+}
+
+.cube > .five {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(100px);
+}
+
+.cube > .six {
+	-webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(100px);
+}
