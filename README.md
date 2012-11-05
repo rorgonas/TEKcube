@@ -11,7 +11,7 @@ Simple example of 3D Transformations using only CSS3 properties:
 - transform-style
 - transform scale3d(a,b,c) rotate3d(deg_val) translateZ(px_val)
 
-thanks
+Thanks
 =======
 Morphing Power Cubes by 
 <br />https://www.webkit.org/blog/386/3d-transforms/
